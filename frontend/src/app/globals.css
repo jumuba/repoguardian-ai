@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #071019;
+  --foreground: #e6edf5;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(34, 211, 238, .10), transparent 28rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+code, pre, .font-mono {
+  font-family: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+}

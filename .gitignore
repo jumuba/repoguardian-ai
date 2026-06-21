@@ -1,0 +1,12 @@
+.env
+.vercel/
+Requirement.docx
+.venv/
+__pycache__/
+*.pyc
+*.db
+node_modules/
+.next/
+coverage/
+playwright-report/
+.pytest_cache/
