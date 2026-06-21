@@ -14,11 +14,5 @@ services:
         value: sqlite:////tmp/repoguardian.db
       - key: FRONTEND_URL
         value: https://repoguardian-ai-gray.vercel.app
-      - key: GITHUB_CLIENT_ID
-        sync: false
-      - key: GITHUB_CLIENT_SECRET
-        sync: false
       - key: TOKEN_ENCRYPTION_KEY
         generateValue: true
-      - key: OPENAI_API_KEY
-        sync: false
