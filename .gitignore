@@ -1,5 +1,6 @@
 .env
 .vercel/
+.tools/
 Requirement.docx
 .venv/
 __pycache__/

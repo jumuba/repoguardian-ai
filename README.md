@@ -50,7 +50,7 @@ docker compose up --build
 ## Production deployment
 
 - Frontend: Vercel project `repoguardian-ai`
-- Backend: the root `render.yaml` provisions FastAPI and PostgreSQL on Render.
+- Backend: the root `render.yaml` provisions FastAPI on Render with ephemeral SQLite storage on the free plan.
 - Render must import this project from a GitHub, GitLab, or Bitbucket repository.
 
 ## API workflow

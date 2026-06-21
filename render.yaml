@@ -11,9 +11,7 @@ services:
     autoDeploy: true
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: repoguardian-postgres
-          property: connectionString
+        value: sqlite:////tmp/repoguardian.db
       - key: FRONTEND_URL
         value: https://repoguardian-ai-gray.vercel.app
       - key: GITHUB_CLIENT_ID
@@ -24,12 +22,3 @@ services:
         generateValue: true
       - key: OPENAI_API_KEY
         sync: false
-
-databases:
-  - name: repoguardian-postgres
-    databaseName: repoguardian
-    user: repoguardian
-    plan: free
-    region: frankfurt
-    postgresMajorVersion: "16"
-    ipAllowList: []
