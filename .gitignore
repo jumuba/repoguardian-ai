@@ -2,6 +2,7 @@
 .vercel/
 .tools/
 Requirement.docx
+~$*.docx
 .venv/
 __pycache__/
 *.pyc
